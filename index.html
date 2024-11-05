@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/index.css">
+
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>    
     <!-- Beginning of header section (Danielle) -->
@@ -81,6 +83,37 @@
 
         <!-- End of "Why use it" section (Danielle) -->
         <!-- Beginning of "Inner html section" (Vansh + Nick)   -->
+         <section class="code-along">
+            <h2>Code Along</h2>
+            <section class="bootstrap-buttons-">
+                <h2>Buttons and Button Groups</h2>
+                <p>Bootstrap 5 contains classes to style button according to their use and even allows to group buttons. Try the code below to see how different bootstrap classes work on buttons</p>
+                <p>As seen, the following code snippet groups a series of buttons in a similar group</p>
+                <section class="excercise">
+                    <h3>Try the Following exercises!</h3>
+                    <ul class="excercise-code">
+                        <li><p>Try adding the class <code>"btn-group-lg"</code> or <code>"btn-group-sm"</code> to the button group.</p></li>
+                        <li><p>Try adding either of these classes to the individual buttons <code>"btn-primary"</code> or <code>"btn-danger"</code></p></li>
+                        <li><p>Try changing the class of the button group from <code>"btn-group"</code> to <code>"btn-group-vertical"</code></p></li>
+                    </ul>
+                </section>
+                <section class="user-code button-section">
+                    <h3>Code</h3>
+                    <form class="form-group">
+                        <label for="code">Code: </label>
+                        <textarea class="form-control" id="code"></textarea>
+                        <button type="button" class="btn btn-primary run">Run</button>
+                        <button type="button" class="btn btn-secondary reset">Reset</button>
+                    </form> 
+                </section>
+                <section class="output button-section">
+                    <h3>Output</h3>
+                    <div class="output-window">
+                        <!-- User code goes here from javascript -->
+                    </div>
+                </section>
+            </section>
+         </section>
 
 
         <!-- End of "Inner html section" (Vansh + Nick) -->
