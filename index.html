@@ -21,14 +21,18 @@
 <body>
     <!-- Beginning of header section (Danielle) -->
     <header>
-        <a href="index.html"><p>Team 5</p></a>
-        <nav>
-            <ul>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Demo</li>
-                <li><a href=""></a>Code Snippits</li>
-                <li><a href=""></a>Pros and Cons</li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Team 5</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Snippits</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pros & Cons</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- End of header section (Danielle) -->
@@ -38,51 +42,58 @@
 
         <!-- End of hero section, carousel (Jay) -->
         <!-- Beginning of "Why use it" section (Danielle) -->
-        <div>
-            <article>
-                <h2>Why use it?</h2>
-                <p>Bootstrap primary use is to quickly develop user-friendly websites that can be visually appealing but also accessible for all users.</p>
-                <ul>
-                    <li>Readily available resources</li>
-                    <li>Prototyping</li>
-                    <li>Responsiveness</li>
-                    <li>Easy to use</li>
-                </ul>
-                <p>Bootstrap has use cases where consistency is a key factor on developing uniform designs across multiple frameworks. Other uses of Bootstrap include.</p>
-                <ul>
-                    <li>Open source</li>
-                    <li>Browser compatibility</li>
-                    <li>JavaScript Integration</li>
-                </ul>
-            </article>
-            <article>
-                <h2>Other frameworks</h2>
-                <ul>
-                    <li>Foundation</li>
-                    <li>Tailwind CSS</li>
-                    <li>UIkit</li>
-                    <li>Semantic UI</li>
-                    <li>Materialize</li>
-                    <li>And more...but Bootstrap is one of the most popular!</li>
-                </ul>
-            </article>
-            <article>
-                <h2>Where would you use it?</h2>
-                <p>Basically, you can use it for your entire site! It's a framework, “framing for your house”.</p>
-                <ul>
-                    <li>Headers</li>
-                    <li>Nav bars</li>
-                    <li>Hero sections</li>
-                    <li>Sidebars</li>
-                    <li>Footers</li>
-                    <li>Dropdowns</li>
-                    <li>Typography sizing</li>
-                    <li>Even a pre-built colour palette!</li>
-                </ul>
-                <p>See some <span><a href="https://getbootstrap.com/docs/5.3/examples/">examples here!</a></span></p>
-            </article>
-        </div>
-
+        <div class="container-fluid">
+            <div class="row">
+                <article class="col-md-6 col-lg-4 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Why use it?</h2>
+                        <p class="card-text">Bootstrap primary use is to quickly develop user-friendly websites that can be visually appealing but also accessible for all users.</p>
+                        <ul>
+                            <li>Readily available resources</li>
+                            <li>Prototyping</li>
+                            <li>Responsiveness</li>
+                            <li>Easy to use</li>
+                        </ul>
+                        <p>Bootstrap has use cases where consistency is a key factor on developing uniform designs across multiple frameworks. Other uses of Bootstrap include.</p>
+                        <ul>
+                            <li>Open source</li>
+                            <li>Browser compatibility</li>
+                            <li>JavaScript Integration</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-4 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Other frameworks</h2>
+                        <ul>
+                            <li>Foundation</li>
+                            <li>Tailwind CSS</li>
+                            <li>UIkit</li>
+                            <li>Semantic UI</li>
+                            <li>Materialize</li>
+                            <li>And more...but Bootstrap is one of the most popular!</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-4 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Where would you use it?</h2>
+                        <p class="card-text">Basically, you can use it for your entire site! It's a framework, “framing for your house”.</p>
+                        <ul>
+                            <li>Headers</li>
+                            <li>Nav bars</li>
+                            <li>Hero sections</li>
+                            <li>Sidebars</li>
+                            <li>Footers</li>
+                            <li>Dropdowns</li>
+                            <li>Typography sizing</li>
+                            <li>Even a pre-built colour palette!</li>
+                        </ul>
+                        <p class="card-text">See some <span><a href="https://getbootstrap.com/docs/5.3/examples/" class="card-link">examples here!</a></span></p>
+                    </div>
+                </article>
+            </div>
+         </div>
         <!-- End of "Why use it" section (Danielle) -->
         <!-- Beginning of "Inner html section" (Vansh + Nick)   -->
          <section class="code-along">
