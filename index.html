@@ -18,7 +18,7 @@
     <script src="scripts/index.js" defer></script>
 </head>
 
-<body>
+<body data-bs-theme="dark">
     <!-- Beginning of header section (Danielle) -->
     <header>
         <nav class="navbar bg-body-tertiary fixed-top">
@@ -41,7 +41,7 @@
                                 <a class="nav-link active" aria-current="page" href="index.html#codeAlong">Code Along</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html#">Snippits</a>
+                                <a class="nav-link active" aria-current="page" href="index.html#codeSnippits">Code Snippits</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html#prosCons">Pros & Cons</a>
@@ -118,8 +118,8 @@
         <!-- End of hero section, carousel (Jay) -->
         <!-- Beginning of "Why use it" section (Danielle) -->
         <div class="container-fluid">
-            <div class="row">
-                <article class="col-md-6 col-lg-4 card">
+            <div class="row gap-4">
+                <article class="col-md-6 col-lg-3 card">
                     <div class="card-body">
                         <h2 class="card-title">Why use it?</h2>
                         <p class="card-text">Bootstrap primary use is to quickly develop user-friendly websites that can
@@ -139,45 +139,45 @@
                         </ul>
                     </div>
                 </article>
+                <article class="col-md-6 col-lg-3 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Other frameworks</h2>
+                        <ul>
+                            <li>Foundation</li>
+                            <li>Tailwind CSS</li>
+                            <li>UIkit</li>
+                            <li>Semantic UI</li>
+                            <li>Materialize</li>
+                            <li>And more...but Bootstrap is one of the most popular!</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-3 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Where would you use it?</h2>
+                        <p class="card-text">Basically, you can use it for your entire site! It's a framework, “framing
+                            for your house”.</p>
+                        <ul>
+                            <li>Headers</li>
+                            <li>Nav bars</li>
+                            <li>Hero sections</li>
+                            <li>Sidebars</li>
+                            <li>Footers</li>
+                            <li>Dropdowns</li>
+                            <li>Typography sizing</li>
+                            <li>Even a pre-built colour palette!</li>
+                        </ul>
+                        <p class="card-text">See some <span><a href="https://getbootstrap.com/docs/5.3/examples/"
+                                    class="card-link">examples here!</a></span></p>
+                    </div>
+                </article>
             </div>
-            <article class="col-md-6 col-lg-4 card">
-                <div class="card-body">
-                    <h2 class="card-title">Other frameworks</h2>
-                    <ul>
-                        <li>Foundation</li>
-                        <li>Tailwind CSS</li>
-                        <li>UIkit</li>
-                        <li>Semantic UI</li>
-                        <li>Materialize</li>
-                        <li>And more...but Bootstrap is one of the most popular!</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="col-md-6 col-lg-4 card">
-                <div class="card-body">
-                    <h2 class="card-title">Where would you use it?</h2>
-                    <p class="card-text">Basically, you can use it for your entire site! It's a framework, “framing
-                        for your house”.</p>
-                    <ul>
-                        <li>Headers</li>
-                        <li>Nav bars</li>
-                        <li>Hero sections</li>
-                        <li>Sidebars</li>
-                        <li>Footers</li>
-                        <li>Dropdowns</li>
-                        <li>Typography sizing</li>
-                        <li>Even a pre-built colour palette!</li>
-                    </ul>
-                    <p class="card-text">See some <span><a href="https://getbootstrap.com/docs/5.3/examples/"
-                                class="card-link">examples here!</a></span></p>
-                </div>
-            </article>
         </div>
         </div>
         <!-- End of "Why use it" section (Danielle) -->
         <!-- Beginning of "Inner html section" (Vansh)   -->
         <section class="code-along container-fluid" id="codeAlong">
-            <h2>Code Along</h2>
+            <h2 class="card-title">Code Along</h2>
             <div class="container-fluid">
                 <section class="bootstrap-buttons">
                     <h2>
@@ -198,19 +198,23 @@
                             </ul>
                         </section>
                    </div>
-                    <div class="row my-5">
-                        <section class="user-code col-md-6 card">
-                            <h3>Code</h3>
-                            <form class="form-group">
-                                <label for="buttonCode" class="d-none">Code: </label>
-                                <textarea class="form-control font-monospace" rows="10" id="buttonCode"></textarea>
-                                <button type="button" class="btn btn-primary run mt-2 mb-3"> Run Code </button>
-                                <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
-                            </form> 
+                    <div class="row my-5 gap-4">
+                        <section class="user-code col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3>Code</h3>
+                                <form class="form-group">
+                                    <label for="buttonCode" class="d-none">Code: </label>
+                                    <textarea class="form-control font-monospace" rows="10" id="buttonCode"></textarea>
+                                    <button type="button" class="btn btn-primary run mt-2 mb-3"> Run Code </button>
+                                    <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                                </form> 
+                            </div>
                         </section>
-                        <section class="output col-md-6 card">
-                            <h3>Output</h3>
-                            <div class="output-window card-body">
+                        <section class="output col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3>Output</h3>
+                                <div class="output-window card-body">
+                                </div>
                             </div>
                         </section>
                           
@@ -236,20 +240,24 @@
                             </ul>
                         </section>
                     </div>
-                    <div class="row my-5">
-                        <section class="user-code col-md-6 card">
-                            <h3 class="card-title">Code</h3>
-                            <form class="form-group">
-                                <label for="darkModeCode" class="d-none">Code: </label>
-                                <textarea class="form-control font-monospace" id="darkModeCode" rows="10"></textarea>
-                                <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
-                                <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
-                            </form> 
+                    <div class="row my-5 gap-4">
+                        <section class="user-code col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Code</h3>
+                                <form class="form-group">
+                                    <label for="darkModeCode" class="d-none">Code: </label>
+                                    <textarea class="form-control font-monospace" id="darkModeCode" rows="10"></textarea>
+                                    <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
+                                    <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                                </form> 
+                            </div>
                         </section>
-                        <section class="output col-md-6 card">
-                            <h3 class="card-title">Output</h3>
-                            <div class="output-window card-body">
-                                <!-- User code goes here from javascript -->
+                        <section class="output col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Output</h3>
+                                <div class="output-window card-body">
+                                    <!-- User code goes here from javascript -->
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -277,20 +285,24 @@
                             </ul>
                         </section>
                     </div>
-                    <div class="row my-5">
-                        <section class="user-code col-md-6 card">
-                            <h3 class="card-title">Code</h3>
-                            <form class="form-group">
-                                <label for="listGroupCode" class="d-none">Code: </label>
-                                <textarea class="form-control font-monospace" id="listGroupCode" rows="10"></textarea>
-                                <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
-                                <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
-                            </form>
+                    <div class="row my-5 gap-4">
+                        <section class="user-code col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Code</h3>
+                                <form class="form-group">
+                                    <label for="listGroupCode" class="d-none">Code: </label>
+                                    <textarea class="form-control font-monospace" id="listGroupCode" rows="10"></textarea>
+                                    <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
+                                    <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                                </form>
+                            </div>
                         </section>
-                        <section class="output col-md-6 card">
-                            <h3 class="card-title">Output</h3>
-                            <div class="output-window card-body">
-                                <!-- User code goes here from javascript -->
+                        <section class="output col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Output</h3>
+                                <div class="output-window card-body">
+                                    <!-- User code goes here from javascript -->
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -301,32 +313,34 @@
 
         <!-- End of "Inner html section" (Vansh) -->
         <!-- Beginning of "our website snippits" section (Nick) -->
-        <div class="card">
-            <article class="card-body">
-                <h2 class="card-title">Implementing a carousel with Bootsrap</h2>
-                <img class="card-img-top" src="images/snippit.png"
-                    alt="Snippit of HTML that shows carosusel functionality in bootstrap..">
-                <p class="card-text">The carousel function begins with an id or class name you select and the bootstrap
-                    commands shown
-                    above.</p>
-            </article>
-        </div>
-        <div class="card">
-            <article class="card-body">
-                <h2 class=" card-title">Adding the card function through Bootstrap</h2>
-                <img class="card-img-top" src="images/cards.png"
-                    alt="Snippit of HTML that shows the card function in bootstrap.">
-                <p class="card-text">The card function adds a easily flexible container around the selected section. by
-                    having class =
-                    "card" you can start styling the selected section.</p>
-            </article>
-        </div>
+         <div class="container-fluid">
+            <section id="codeSnippits">
+                <h2>Code Snippits</h2>
+            </section>
+            <div class="row gap-4">
+                <article class="col-md-8 card">
+                    <div class="card-body">
+                        <h3 class="card-title">Implementing a carousel with Bootsrap</h3>
+                        <img class="card-img-top" src="images/snippit.png"
+                            alt="Snippit of HTML that shows carosusel functionality in bootstrap..">
+                            <p class="card-text">The carousel function begins with an id or class name you select and the bootstrap commands shown above.</p>
+                    </div>
+                </article>
+                <article class="col-md-8 card">
+                    <div class="card-body">
+                        <h3 class=" card-title">Adding the card function through Bootstrap</h3>
+                        <img class="card-img-top" src="images/cards.png" alt="Snippit of HTML that shows the card function in bootstrap.">
+                        <p class="card-text">The card function adds an easily flexible container around the selected section, by having class = "card" you can start styling the selected section.</p>
+                    </div>
+                </article>
+            </div>
+         </div>
 
         <!-- End of "our website snippets" section (Nick) -->
         <!-- Beginning of pros and cons section (Nick)-->
         <div class="container-fluid">
-            <div class="row">
-                <section class="col-md-6 card" id="prosCons">
+            <div class="row gap-4">
+                <section class="col-md-6 col-lg-5 card" id="prosCons">
                     <div class="card-body">
                         <h2 class="card-title">Pros</h2>
                         <ul>
@@ -341,7 +355,7 @@
                         </ul>
                     </div>
                 </section>
-                <section class="col-md-6 card">
+                <section class="col-md-6 col-lg-5 card">
                     <div class="card-body">
                         <h2 class="card-title">Cons</h2>
                         <ul>
@@ -360,9 +374,7 @@
     </main>
     <footer>
         <address>
-            <p>
-                this is a footer For Educational purposes only.
-            </p>
+            <p>For educational purposes only.</p>
         </address>
     </footer>
 </body>
