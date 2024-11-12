@@ -148,93 +148,126 @@
         </div>
         <!-- End of "Why use it" section (Danielle) -->
         <!-- Beginning of "Inner html section" (Vansh)   -->
-        <section class="code-along">
+        <section class="code-along container-fluid">
             <h2>Code Along</h2>
-            <section class="bootstrap-buttons">
-                <h2>Buttons and Button Groups</h2>
-                <p>Bootstrap 5 contains classes to style button according to their use and even allows to group buttons. Try the code below to see how different bootstrap classes work on buttons</p>
-                <p>As seen, the following code snippet groups a series of buttons in a similar group</p>
-                <section class="excercise">
-                    <h3>Try the Following exercises!</h3>
-                    <ul class="excercise-code">
-                        <li><p>Try adding the class <code>"btn-group-lg"</code> or <code>"btn-group-sm"</code> to the button group.</p></li>
-                        <li><p>Try adding either of these classes to the individual buttons <code>"btn-primary"</code> or <code>"btn-danger"</code></p></li>
-                        <li><p>Try changing the class of the button group from <code>"btn-group"</code> to <code>"btn-group-vertical"</code></p></li>
-                    </ul>
-                </section>
-                <section class="user-code">
-                    <h3>Code</h3>
-                    <form class="form-group">
-                        <label for="buttonCode">Code: </label>
-                        <textarea class="form-control" id="buttonCode"></textarea>
-                        <button type="button" class="btn btn-primary run">Run</button>
-                        <button type="button" class="btn btn-secondary reset">Reset</button>
-                    </form> 
-                </section>
-                <section class="output">
-                    <h3>Output</h3>
-                    <div class="output-window">
-                        <!-- User code goes here from javascript -->
+            <div class="container-fluid">
+                <section class="bootstrap-buttons">
+                    <h2>
+                        Buttons and Button Groups 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-view-stacked" viewBox="0 0 16 16">
+                            <path d="M3 0h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm0 8h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+                          </svg>
+                    </h2>
+                    <p>Bootstrap 5 contains classes to style button according to their use and even allows to group buttons. Try the exercise below to see how different bootstrap classes work on buttons</p>
+                    <p>As seen, the following code snippet groups a series of buttons in a similar group</p>
+                   <div class="row">
+                        <section class="exercise col-md">
+                            <h3>Try the Following Exercises!</h3>
+                            <ul class="exercise-code">
+                                <li><p>Try adding the class <code>"btn-group-lg"</code> or <code>"btn-group-sm"</code> to the button group.</p></li>
+                                <li><p>Try adding either of these classes to the individual buttons <code>"btn-primary"</code> or <code>"btn-danger"</code></p></li>
+                                <li><p>Try changing the class of the button group from <code>"btn-group"</code> to <code>"btn-group-vertical"</code></p></li>
+                            </ul>
+                        </section>
+                   </div>
+                    <div class="row my-5">
+                        <section class="user-code col-md-6 card">
+                            <h3>Code</h3>
+                            <form class="form-group">
+                                <label for="buttonCode" class="d-none">Code: </label>
+                                <textarea class="form-control font-monospace" rows="10" id="buttonCode"></textarea>
+                                <button type="button" class="btn btn-primary run mt-2 mb-3"> Run Code </button>
+                                <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                            </form> 
+                        </section>
+                        <section class="output col-md-6 card">
+                            <h3>Output</h3>
+                            <div class="output-window card-body">
+                            </div>
+                        </section>
+                          
+                    </section>
                     </div>
-                </section>
-            </section>
+            </div>
 
-            <section class="bootstrap-darkMode">
-                <h2>Dark Mode On components</h2>
-                <p>dark mode on components....</p>
-                <p>As seen .....</p>
-                <section class="excercise">
-                    <h3>Try the Following exercises!</h3>
-                    <ul class="excercise-code">
-                    <li><p>Try adding the property <code>data-bs-theme="dark"</code> to the table tag below</p></li>
-                    </ul>
-                </section>
-                <section class="user-code">
-                    <h3>Code</h3>
-                    <form class="form-group">
-                        <label for="darkModeCode">Code: </label>
-                        <textarea class="form-control" id="darkModeCode"></textarea>
-                        <button type="button" class="btn btn-primary run">Run</button>
-                        <button type="button" class="btn btn-secondary reset">Reset</button>
-                    </form> 
-                </section>
-                <section class="output">
-                    <h3>Output</h3>
-                    <div class="output-window">
-                        <!-- User code goes here from javascript -->
+            <div class="container-fluid">
+                <section class="bootstrap-darkMode">
+                    <h2>
+                        Dark Mode On components
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+                        </svg>
+                    </h2>
+                    <p>Bootstrap 5 also offers classes to style various components in dark mode, providing an elegant and modern look for your web projects. Try the exercise below to see how Bootstrap class work in dark mode.</p>
+                    <p>As seen in the code, a table is created using bootstrap. You can try to apply dark mode on the table</p>
+                    <div class="row">
+                        <section class="exercise col-md">
+                            <h3>Try the Following Exercise!</h3>
+                            <ul class="exercise-code">
+                            <li><p>Try adding the property <code>data-bs-theme="dark"</code> to the table tag below</p></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="row my-5">
+                        <section class="user-code col-md-6 card">
+                            <h3 class="card-title">Code</h3>
+                            <form class="form-group">
+                                <label for="darkModeCode" class="d-none">Code: </label>
+                                <textarea class="form-control font-monospace" id="darkModeCode" rows="10"></textarea>
+                                <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
+                                <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                            </form> 
+                        </section>
+                        <section class="output col-md-6 card">
+                            <h3 class="card-title">Output</h3>
+                            <div class="output-window card-body">
+                                <!-- User code goes here from javascript -->
+                            </div>
+                        </section>
                     </div>
                 </section>
-            </section>
-            
-            <section class="bootstrap-listGroup">
-                <h2>List Groups</h2>
-                <p>Some Text About List Groups.</p>
-                <p>As shown Below.....</p>
-                <section class="excercise">
-                    <h3>Try the Following exercises!</h3>
-                    <ul class="excercise-code">
-                        <li><p>Try adding the <code>"list-group-item-action"</code> class to any of the list items, and then try hovering over that item.</p></li>
-                        <li><p>Try adding the class <code>"list-group-flush"</code> to the <code>ul</code> tag besides the <code>"list-group"</code> class to flush out some borders.</p></li>
-                        <li><p>Try adding the class <code>"list-group-horizontal"</code> to the <code>"list-group"</code> class.</p></li>
-                        <li>Try adding a <code>"disabled"</code> class to any of the list items to give that item a bit lighter colour.</li>
-                    </ul>
-                </section>
-                <section class="user-code">
-                    <h3>Code</h3>
-                    <form class="form-group">
-                        <label for="listGroupCode">Code: </label>
-                        <textarea class="form-control" id="listGroupCode"></textarea>
-                        <button type="button" class="btn btn-primary run">Run</button>
-                        <button type="button" class="btn btn-secondary reset">Reset</button>
-                    </form>
-                </section>
-                <section class="output">
-                    <h3>Output</h3>
-                    <div class="output-window">
-                        <!-- User code goes here from javascript -->
+            </div>
+            <div class="container-fluid">
+                <section class="bootstrap-listGroup">
+                    <h2>
+                        List Groups
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/>
+                            <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
+                            <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/>
+                          </svg>
+                    </h2>
+                    <p>Bootstrap 5 provides versatile classes to style list groups, enabling you to create neatly organized and interactive lists. Try the exercise below to see how different Bootstrap classes can be applied to enhance list groups.</p>
+                    <div class="row">
+                        <section class="exercise col-md">
+                            <h3>Try the Following Exercises!</h3>
+                            <ul class="exercise-code">
+                                <li><p>Try adding the <code>"list-group-item-action"</code> class to any of the list items, and then try hovering over that item.</p></li>
+                                <li><p>Try adding the class <code>"list-group-flush"</code> to the <code>ul</code> tag besides the <code>"list-group"</code> class to flush out some borders.</p></li>
+                                <li><p>Try adding the class <code>"list-group-horizontal"</code> to the <code>"list-group"</code> class.</p></li>
+                                <li>Try adding a <code>"disabled"</code> class to any of the list items to give that item a bit lighter colour.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="row my-5">
+                        <section class="user-code col-md-6 card">
+                            <h3 class="card-title">Code</h3>
+                            <form class="form-group">
+                                <label for="listGroupCode" class="d-none">Code: </label>
+                                <textarea class="form-control font-monospace" id="listGroupCode" rows="10"></textarea>
+                                <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
+                                <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                            </form>
+                        </section>
+                        <section class="output col-md-6 card">
+                            <h3 class="card-title">Output</h3>
+                            <div class="output-window card-body">
+                                <!-- User code goes here from javascript -->
+                            </div>
+                        </section>
                     </div>
                 </section>
-            </section>
+            </div>
         </section>
 
 
