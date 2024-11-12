@@ -56,6 +56,21 @@
   
   
   }
+
+
+
+  /*Code Along Section*/
+
+  .output-window{
+    min-height: 15.875rem;
+    margin-bottom: 3.875rem;
+    border: solid 1px rgb(223, 223, 223);
+    border-radius: .3125rem;
+  }
+
+  .exercise-code{
+    list-style: none;
+  }
   
   
   
