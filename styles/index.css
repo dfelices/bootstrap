@@ -64,13 +64,24 @@
   .output-window{
     min-height: 15.875rem;
     margin-bottom: 3.875rem;
-    border: solid 1px rgb(223, 223, 223);
+    border: solid 1px #ced4da4a;
     border-radius: .3125rem;
+    background-color: #ffffff;
   }
-
   .exercise-code{
     list-style: none;
   }
+
+
+  .row{
+    justify-content: center;
+  }
+  
+  .description{ 
+    background-color: #ffffff10;
+    padding: 1rem;
+  }
+
   
   
   

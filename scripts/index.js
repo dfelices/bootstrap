@@ -15,6 +15,27 @@ const listGroupResetButton = document.querySelector('.bootstrap-listGroup .reset
 const listGroupCodeArea = document.querySelector('.bootstrap-listGroup .output-window');
 
 
+/*code for the dark and lightmode*/
+const modeButton = document.querySelector('.modeButton a');
+const darkButton = document.querySelector('.dark');
+const lightButton = document.querySelector('.light');
+const body = document.body;
+
+modeButton.addEventListener('click', () => {
+  let newTheme = 'light';
+  if(darkButton.classList.contains('d-none')){
+    newTheme = 'light';
+    darkButton.classList.remove('d-none');
+    lightButton.classList.add('d-none');
+  }
+  else{
+    newTheme = 'dark';
+    darkButton.classList.add('d-none');
+    lightButton.classList.remove('d-none');
+  }
+  body.setAttribute('data-bs-theme', newTheme);
+});
+
 
 
 function defaultCode(elem){
