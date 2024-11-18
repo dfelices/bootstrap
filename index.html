@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,37 +14,389 @@
 
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/index.css">
+
+    <script src="scripts/index.js" defer></script>
 </head>
-<body>    
+
+<body data-bs-theme="dark">
     <!-- Beginning of header section (Danielle) -->
     <header>
-
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Team 5</a>
+                <div class="header-left">
+                    <div class="modeButton mx-1 d-inline" >
+                        <a href="#" class="navbar-brand">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-sun-fill light" viewBox="0 0 16 16">
+                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-moon-stars-fill dark d-none" viewBox="0 0 16 16">
+                            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                          </svg>
+                        </a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Team 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html#myCarousel">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html#codeAlong">Code Along</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html#codeSnippits">Code Snippits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html#prosCons">Pros & Cons</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- End of header section (Danielle) -->
     <main>
         <!-- Beginning of hero section, carousel (Jay) -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="bd-img" width="100%" height="100%" src="media/bg1.jpg" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>What Is Bootstrap?</h1>
+                            <p>Created at Twitter in mid 2010s, Bootstrap is a front-end framework program that excels in responsiveness and interactivity.
+                            </p>
+                            <p><a class="btn btn-lg btn-bd-primary" href="index.html#whyUseIt">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-img" width="100%" height="100%" src="media/bg1.jpg" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>What Is Bootstrap?</h1>
+                            <p>Bootstrap uses HTML and CSS predesigned templates for typography and color styles for 
+                                UI components including buttons, navigation, image carousels, and more.
+                            </p>
+                            <p><a class="btn btn-lg btn-bd-primary" href="index.html#whyUseIt">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-img" width="100%" height="100%" src="media/bg1.jpg" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                    <div class="carousel-caption">
+                        <h1>What Does Bootstrap Do?</h1>
+                        <p>Imagine the framing of a house, it makes building quicker and more efficient. Bootstrap is a
+                            framework that helps streamline building responsive page</p>
+                        <p><a class="btn btn-lg btn-bd-primary" href="index.html#codeAlong">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
 
 
         <!-- End of hero section, carousel (Jay) -->
         <!-- Beginning of "Why use it" section (Danielle) -->
-
-
+        <div class="container-fluid" id="whyUseIt">
+            <div class="row gap-4">
+                <article class="col-md-6 col-lg-3 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Why use it?</h2>
+                        <p class="card-text">Bootstrap primary use is to quickly develop user-friendly websites that can
+                            be visually appealing but also accessible for all users.</p>
+                        <ul>
+                            <li>Readily available resources</li>
+                            <li>Prototyping</li>
+                            <li>Responsiveness</li>
+                            <li>Easy to use</li>
+                        </ul>
+                        <p>Bootstrap has use cases where consistency is a key factor on developing uniform designs
+                            across multiple frameworks. Other uses of Bootstrap include.</p>
+                        <ul>
+                            <li>Open source</li>
+                            <li>Browser compatibility</li>
+                            <li>JavaScript Integration</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-3 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Other frameworks</h2>
+                        <ul>
+                            <li>Foundation</li>
+                            <li>Tailwind CSS</li>
+                            <li>UIkit</li>
+                            <li>Semantic UI</li>
+                            <li>Materialize</li>
+                            <li>And more...but Bootstrap is one of the most popular!</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-3 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Where would you use it?</h2>
+                        <p class="card-text">Basically, you can use it for your entire site! It's a framework, “framing
+                            for your house”.</p>
+                        <ul>
+                            <li>Headers</li>
+                            <li>Nav bars</li>
+                            <li>Hero sections</li>
+                            <li>Sidebars</li>
+                            <li>Footers</li>
+                            <li>Dropdowns</li>
+                            <li>Typography sizing</li>
+                            <li>Even a pre-built colour palette!</li>
+                        </ul>
+                        <p class="card-text">See some <span><a href="https://getbootstrap.com/docs/5.3/examples/"
+                                    class="card-link">examples here!</a></span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        </div>
         <!-- End of "Why use it" section (Danielle) -->
-        <!-- Beginning of "Inner html section" (Vansh + Nick)   -->
+        <!-- Beginning of "Inner html section" (Vansh)   -->
+        <section class="code-along container-fluid my-5" id="codeAlong">
+            <h2 class="card-title">Code Along</h2>
+            <div class="container-fluid">
+                <section class="bootstrap-buttons my-5">
+                    <h2>
+                        Buttons and Button Groups 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-view-stacked" viewBox="0 0 16 16">
+                            <path d="M3 0h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm0 8h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+                          </svg>
+                    </h2>
+                    <div class="description">
+                        <p>Bootstrap 5 contains classes to style button according to their use and even allows to group buttons. Try the exercise below to see how different bootstrap classes work on buttons</p>
+                        <p>As seen, the following code snippet groups a series of buttons in a similar group</p>
+                    </div>
+                   <div class="row">
+                        <section class="exercise col-md">
+                            <h3>Try the Following Exercises!</h3>
+                            <ul class="exercise-code">
+                                <li><p>Try adding the class <code>"btn-group-lg"</code> or <code>"btn-group-sm"</code> to the button group.</p></li>
+                                <li><p>Try adding either of these classes to the individual buttons <code>"btn-primary"</code> or <code>"btn-danger"</code></p></li>
+                                <li><p>Try changing the class of the button group from <code>"btn-group"</code> to <code>"btn-group-vertical"</code></p></li>
+                            </ul>
+                        </section>
+                   </div>
+                    <div class="row my-5 gap-4">
+                        <section class="user-code col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3>Code</h3>
+                                <form class="form-group">
+                                    <label for="buttonCode" class="d-none">Code: </label>
+                                    <textarea class="form-control font-monospace" rows="10" id="buttonCode"></textarea>
+                                    <button type="button" class="btn btn-primary run mt-2 mb-3"> Run Code </button>
+                                    <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                                </form> 
+                            </div>
+                        </section>
+                        <section class="output col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3>Output</h3>
+                                <div class="output-window card-body">
+                                </div>
+                            </div>
+                        </section>
+                          
+                    </section>
+                    </div>
+            </div>
+
+            <div class="container-fluid">
+                <section class="bootstrap-darkMode">
+                    <h2>
+                        Dark Mode On components
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+                        </svg>
+                    </h2>
+                    <div class="description">
+                        <p>Bootstrap 5 also offers classes to style various components in dark mode, providing an elegant and modern look for your web projects. Try the exercise below to see how Bootstrap class work in dark mode.</p>
+                        <p>As seen in the code, a table is created using bootstrap. You can try to apply dark mode on the table</p>
+                    </div>
+                    <div class="row">
+                        <section class="exercise col-md">
+                            <h3>Try the Following Exercise!</h3>
+                            <ul class="exercise-code">
+                            <li><p>Try adding the property <code>data-bs-theme="light"</code> to the table tag below</p></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="row my-5 gap-4">
+                        <section class="user-code col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Code</h3>
+                                <form class="form-group">
+                                    <label for="darkModeCode" class="d-none">Code: </label>
+                                    <textarea class="form-control font-monospace" id="darkModeCode" rows="10"></textarea>
+                                    <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
+                                    <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                                </form> 
+                            </div>
+                        </section>
+                        <section class="output col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Output</h3>
+                                <div class="output-window card-body">
+                                    <!-- User code goes here from javascript -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <div class="container-fluid">
+                <section class="bootstrap-listGroup">
+                    <h2>
+                        List Groups
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/>
+                            <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
+                            <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/>
+                          </svg>
+                    </h2>
+                    <div class="description">
+                        <p>Bootstrap 5 provides versatile classes to style list groups, enabling you to create neatly organized and interactive lists. Try the exercise below to see how different Bootstrap classes can be applied to enhance list groups.</p>
+                    </div>
+                    <div class="row">
+                        <section class="exercise col-md">
+                            <h3>Try the Following Exercises!</h3>
+                            <ul class="exercise-code">
+                                <li><p>Try adding the <code>"list-group-item-action"</code> class to any of the list items, and then try hovering over that item.</p></li>
+                                <li><p>Try adding the class <code>"list-group-flush"</code> to the <code>ul</code> tag besides the <code>"list-group"</code> class to flush out some borders.</p></li>
+                                <li><p>Try adding the class <code>"list-group-horizontal"</code> to the <code>"list-group"</code> class.</p></li>
+                                <li>Try adding a <code>"disabled"</code> class to any of the list items to give that item a bit lighter colour.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="row my-5 gap-4">
+                        <section class="user-code col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Code</h3>
+                                <form class="form-group">
+                                    <label for="listGroupCode" class="d-none">Code: </label>
+                                    <textarea class="form-control font-monospace" id="listGroupCode" rows="10"></textarea>
+                                    <button type="button" class="btn btn-primary run mt-2 mb-3">Run Code</button>
+                                    <button type="button" class="btn btn-secondary reset mt-2 mb-3">Reset</button>
+                                </form>
+                            </div>
+                        </section>
+                        <section class="output col-md-6 col-lg-5 card">
+                            <div class="card-body">
+                                <h3 class="card-title">Output</h3>
+                                <div class="output-window card-body">
+                                    <!-- User code goes here from javascript -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </section>
 
 
-        <!-- End of "Inner html section" (Vansh + Nick) -->
+        <!-- End of "Inner html section" (Vansh) -->
         <!-- Beginning of "our website snippits" section (Nick) -->
-
+         <div class="container-fluid mb-5">
+            <section id="codeSnippits">
+                <h2>Code Snippits</h2>
+            </section>
+            <div class="row gap-4">
+                <article class="col-md-8 card">
+                    <div class="card-body">
+                        <h3 class="card-title">Implementing a carousel with Bootsrap</h3>
+                        <img class="card-img-top" src="images/snippit.png"
+                            alt="Snippit of HTML that shows carosusel functionality in bootstrap..">
+                            <p class="card-text">The carousel function begins with an id or class name you select and the bootstrap commands shown above.</p>
+                    </div>
+                </article>
+                <article class="col-md-8 card">
+                    <div class="card-body">
+                        <h3 class=" card-title">Adding the card function through Bootstrap</h3>
+                        <img class="card-img-top" src="images/cards.png" alt="Snippit of HTML that shows the card function in bootstrap.">
+                        <p class="card-text">The card function adds an easily flexible container around the selected section, by having class = "card" you can start styling the selected section.</p>
+                    </div>
+                </article>
+            </div>
+         </div>
 
         <!-- End of "our website snippets" section (Nick) -->
-        <!-- Beginning of pros and cons section (Vansh)-->
-
-
-        <!-- End of pros and cons section (Vansh)-->
+        <!-- Beginning of pros and cons section (Nick)-->
+        <div class="container-fluid my-2">
+            <div class="row gap-4">
+                <section class="col-md-6 col-lg-5 card" id="prosCons">
+                    <div class="card-body">
+                        <h2 class="card-title">Pros</h2>
+                        <ul>
+                            <li>Building with responsive design in mind right from the beginning.</li>
+                            <li>Quicker, more efficient building.</li>
+                            <li>Consistent web pages.</li>
+                            <li>Great for building with teams.</li>
+                            <li>Widespread adoption (many resources, community support.)</li>
+                            <li>User-friendly and comprehensive documentation.</li>
+                            <li>Many built-in components available.</li>
+                            <li>But also highly, customizable!</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="col-md-6 col-lg-5 card">
+                    <div class="card-body">
+                        <h2 class="card-title">Cons</h2>
+                        <ul>
+                            <li>Uniformity leads to cookie cutter designs.</li>
+                            <li>File Size affects the load time and overall user experience on the website.</li>
+                            <li>Learning curve takes a while to learn all the classes.</li>
+                            <li>Highly customizable but a hassle to change.</li>
+                            <li>Can get highly dependent.</li>
+                            <li>Versioning changes are quite different.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- End of pros and cons section (Nick)-->
     </main>
     <footer>
-
+        <address>
+            <p>For educational purposes only.</p>
+        </address>
     </footer>
-    </body>
+</body>
+
 </html>
