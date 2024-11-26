@@ -1,5 +1,26 @@
+/* Wrapper for responsive margins */
+.responsive-wrapper {
+  max-width: 1200px; 
+  margin: 0 auto;   
+  padding: 0 20px;   
+  box-sizing: border-box;
+}
+
+.responsive-wrapper h2 {
+  max-width: 1200px; 
+  margin: 0 auto;    
+  padding: 0 20px;   
+  box-sizing: border-box; 
+}
+
 
 /* Carousel base class */
+.carousel-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .carousel {
   margin-bottom: 4rem;
 }
