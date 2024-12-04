@@ -101,6 +101,11 @@
     padding: 1rem;
   }
 
+  footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
   
   
   
