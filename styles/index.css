@@ -4,14 +4,16 @@
   margin: 0 auto;   
   padding: 0 20px;   
   box-sizing: border-box;
+  margin-bottom:0.5rem;
 }
 
-.responsive-wrapper h2 {
+h2 {
   max-width: 1200px; 
-  margin: 0 auto;    
-  padding: 0 20px;   
+  margin: 0 auto;     
   box-sizing: border-box; 
+  margin-bottom:1rem;
 }
+
 
 
 /* Carousel base class */
@@ -120,8 +122,10 @@
   .description{ 
     background-color: #ffffff10;
     padding: 1rem;
+    margin-bottom:0.5rem;
+  }
+  .section{
+    bottom:2rem;
   }
 
-  
-  
-  
+ 
