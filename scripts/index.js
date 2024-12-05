@@ -120,3 +120,25 @@ listGroupResetButton.addEventListener('click', function(){
   defaultCode("listGroup");
 });
 
+
+function applyResponsiveWrapper() {
+  // Select elements that need the wrapper
+  const sectionsToWrap = [
+    document.querySelector('.bootstrap-buttons'),
+    document.querySelector('.bootstrap-darkMode'),
+    document.querySelector('.bootstrap-listGroup'),
+
+  ];
+
+  sectionsToWrap.forEach(section => {
+    if (section && !section.parentElement.classList.contains('responsive-wrapper')) {
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('responsive-wrapper');
+      section.parentElement.insertBefore(wrapper, section);
+      wrapper.appendChild(section);
+    }
+  });
+}
+
+// Call the function to apply the wrapper
+applyResponsiveWrapper();
