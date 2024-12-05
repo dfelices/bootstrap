@@ -47,7 +47,7 @@ function defaultCode(elem){
     </div>`;
     buttonCodeArea.innerHTML = buttonCodeInputElem.value;
   }else if(elem == "darkMode"){
-    darkModeCodeInputElem.value=`    <table class="table table-striped">
+    darkModeCodeInputElem.value=`    <table class="table table-striped" data-bs-theme="light">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -81,7 +81,7 @@ function defaultCode(elem){
 
   }
   else{
-    listGroupInputElem.value=`<ul class="list-group">
+    listGroupInputElem.value=`<ul class="list-group" data-bs-theme="light">
     <li class="list-group-item">First item</li>
     <li class="list-group-item">Second item</li>
     <li class="list-group-item">Third item</li>
