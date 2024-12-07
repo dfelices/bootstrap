@@ -15,6 +15,27 @@ const listGroupResetButton = document.querySelector('.bootstrap-listGroup .reset
 const listGroupCodeArea = document.querySelector('.bootstrap-listGroup .output-window');
 
 
+/*code for the dark and lightmode*/
+const modeButton = document.querySelector('.modeButton a');
+const darkButton = document.querySelector('.dark');
+const lightButton = document.querySelector('.light');
+const body = document.body;
+
+modeButton.addEventListener('click', () => {
+  let newTheme = 'light';
+  if(darkButton.classList.contains('d-none')){
+    newTheme = 'light';
+    darkButton.classList.remove('d-none');
+    lightButton.classList.add('d-none');
+  }
+  else{
+    newTheme = 'dark';
+    darkButton.classList.add('d-none');
+    lightButton.classList.remove('d-none');
+  }
+  body.setAttribute('data-bs-theme', newTheme);
+});
+
 
 
 function defaultCode(elem){
@@ -26,7 +47,7 @@ function defaultCode(elem){
     </div>`;
     buttonCodeArea.innerHTML = buttonCodeInputElem.value;
   }else if(elem == "darkMode"){
-    darkModeCodeInputElem.value=`    <table class="table table-striped">
+    darkModeCodeInputElem.value=`    <table class="table table-striped" data-bs-theme="light">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -60,7 +81,7 @@ function defaultCode(elem){
 
   }
   else{
-    listGroupInputElem.value=`<ul class="list-group">
+    listGroupInputElem.value=`<ul class="list-group" data-bs-theme="light">
     <li class="list-group-item">First item</li>
     <li class="list-group-item">Second item</li>
     <li class="list-group-item">Third item</li>
@@ -99,3 +120,25 @@ listGroupResetButton.addEventListener('click', function(){
   defaultCode("listGroup");
 });
 
+
+function applyResponsiveWrapper() {
+  // Select elements that need the wrapper
+  const sectionsToWrap = [
+    document.querySelector('.bootstrap-buttons'),
+    document.querySelector('.bootstrap-darkMode'),
+    document.querySelector('.bootstrap-listGroup'),
+
+  ];
+
+  sectionsToWrap.forEach(section => {
+    if (section && !section.parentElement.classList.contains('responsive-wrapper')) {
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('responsive-wrapper');
+      section.parentElement.insertBefore(wrapper, section);
+      wrapper.appendChild(section);
+    }
+  });
+}
+
+// Call the function to apply the wrapper
+applyResponsiveWrapper();
